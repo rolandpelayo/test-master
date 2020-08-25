@@ -1,6 +1,6 @@
 /* First Arduino Program
-   by <Your Full Name>
-   on <Date>
+   by Nollan Jay D. Galicia
+   on August 19, 2020
 */
 
 void setup()
