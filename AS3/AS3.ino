@@ -1,4 +1,4 @@
-/* Second Arduino Program (AS3-Strobes Lights)
+/* Second Arduino Program (Strobes Light)
    by Nollan Jay D. Galicia
    on August 25, 2020
 */
