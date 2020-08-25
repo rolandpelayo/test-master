@@ -1,6 +1,6 @@
 /* First Arduino Program
-   by <Rojien Mancao
-   on <8/19/20>
+   by <Rojien Mancao>
+   on <08-19-20>
 */
 
 void setup()
