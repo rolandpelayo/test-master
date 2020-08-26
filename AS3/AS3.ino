@@ -1,4 +1,4 @@
-/* First Arduino Program
+/* Arduino Strobe Lights
    by Gericko Maandig
    on August 24
 */
