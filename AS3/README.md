@@ -1,5 +1,5 @@
 ## Assignment #3 
-### Gericko Maandig
+### Gericko S. Maandig
 ### August 24
 ### Arduino Strobe Lights
 

@@ -1,5 +1,5 @@
 /* Arduino Strobe Lights
-   by Gericko Maandig
+   by Gericko S. Maandig
    on August 24
 */
 
