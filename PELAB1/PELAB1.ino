@@ -5,7 +5,7 @@
 
 
 
-#define speaker_1 13
+#define piezo_1 13
 #define accelerometer A5
 
 double meterValue;
@@ -13,7 +13,7 @@ int speed;
 
 void setup()
 {
-	pinMode (speaker_1. OUTPUT);
+	pinMode (piezo_1. OUTPUT);
   	pinMode (accelerometer, INPUT);
   	Serial.begin(9600);
 }
@@ -26,8 +26,8 @@ void loop()
   	Serial.println(speed);
   
   if (speed >= 100{
-    digitalWrite(speaker_1, HIGH);
+    digitalWrite(piezo_1, HIGH);
   }else{
-    digitalWrite(speaker_1, LOW);
+    digitalWrite(piezo_1, LOW);
   }  
 }
