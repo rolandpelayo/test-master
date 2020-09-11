@@ -1,7 +1,7 @@
 void setup()
 {
   Serial.begin(9600);
-  pinMode(13,OUTPUT);
+  pinMode(13, OUTPUT);
 }
 
 void loop()
@@ -28,21 +28,21 @@ void loop()
     to get the speed, just divide SensorValue by 7.3
          
   */
-  
+
   int SensorValue = analogRead(A5);
-  
-  int speed = SensorValue/7.3;
-  
+
+  int speed = SensorValue / 7.3;
+
   //PLS CHECK THE SERIAL MONITOR
   Serial.println(speed);
-  delay(1); 
-  
-  if(SensorValue >= 730)
+  delay(1);
+
+  if (SensorValue >= 730)
   {
-    digitalWrite(13,HIGH);
+    digitalWrite(13, HIGH);
   }
   else
   {
-    digitalWrite(13,LOW);
+    digitalWrite(13, LOW);
   }
 }
