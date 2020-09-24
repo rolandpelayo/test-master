@@ -1,0 +1,184 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	min-width: 700px;
+	margin: 0px;
+}
+header{
+	background: url("../Images/blackboard-edit.jpg");
+	background-size: cover;
+}
+.logo{
+	font-size: 50px;
+	font-family: 'Permanent Marker';
+	color: white;
+	text-shadow: 2px 2px 5px black;
+	margin: auto 0px auto 90px;
+}
+.links{
+	margin: auto 0px auto 0px;
+	padding: 15px 0px 15px 0px;
+	text-shadow: 1px 1px 2px black;
+}
+.links li{
+	display: inline-block;
+	list-style: none;
+	margin-right: 100px;
+}
+.links li a{
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+	font-family: 'Roboto';
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+.links li a:hover{
+	color: red;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 1px 1px 5px black;
+	height: 100px;
+}
+.main-body{
+	margin: 0px 90px;
+}
+.header-div .p{
+	font-family: 'Roboto';
+	font-size: 60px;
+	margin: 50px auto 20px auto;
+	text-align: center;
+}
+.header-div .pp{
+	font-family: 'Open Sans';
+	font-size: 20px;
+	margin: 25px auto;
+	text-align: justify;
+	width: 800px;
+	font-weight: 300;
+}
+#rabbit-turtle{
+	font-family: 'Faster One', cursive;
+}
+#rabbit-turtle-text
+{
+	font-family: 'Roboto Slab', serif;
+}
+#father-son{
+	font-family: 'Glass Antiqua', cursive;
+}
+#father-son-text{
+	font-family: 'Sanchez', serif;
+}
+#pig-sheep{
+	font-family: 'Grand Hotel', cursive;
+}
+#pig-sheep-text{
+	font-family: 'PT Serif', serif;
+}
+#shepherd-boy{
+	font-family: 'Lacquer', cursive;
+}
+#shepherd-boy-text{
+	font-family: 'Vollkorn', serif;
+}
+#lion-fox{
+	font-family: 'Walter Turncoat', cursive;
+}
+#lion-fox-text
+{
+	font-family: 'Halant', serif;
+}
+.more-stories{
+	height: 850px;
+	padding: 0px 90px 70px 90px;
+	background: #DCDCDC;
+   	background-size: cover;
+   	height: 450px;
+}
+.title-bottom{
+	font-size: 45px;
+	font-family: 'Roboto';
+	font-weight: 300;
+	padding-top:25px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+footer{
+	height: 80px;
+	background: url("../Images/blackboard-edit.jpg");
+	background-size: cover;
+	box-shadow: 1px 1px 5px black;
+}
+.footer{
+	margin-left: 90px;
+	margin-right: 90px;
+	display: flex;
+	justify-content: space-around;
+}
+.about{
+	width: 400px;
+	height: 80px;
+	padding: 5px 0px 0px 0px;
+}
+.p1{
+	font-family: 'Permanent Marker';
+	font-size: 20px;
+	color: white;
+	margin: 0px;
+	text-align: center;
+	text-shadow: 1px 1px 1px black;
+	letter-spacing: 1px;
+}
+.p2{
+	font-family: 'Open Sans';
+	font-size: 15px;
+	color: white;
+	margin: 0px;
+	text-align: center;
+	text-shadow: 1px 1px 1px black;
+}
+.header-div img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+}
+.more-stories figure{
+	width: 600px;
+	margin-bottom: 0px;
+}
+.more-stories figure:hover{
+	box-shadow: 1px 1px 3px black;
+}
+.more-stories figure img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+.more-stories .figures-1{
+	display: flex;
+	justify-content: space-around;
+}
+.more-stories figure a{
+	text-decoration: none;
+	color: black;
+}
+.more-stories figure p{
+	font-family: 'Roboto';
+	font-size: 18px;
+	font-weight: 400;
+	margin: 10px;
+	text-align: center;
+}
+.more-stories figure figcaption{
+	font-family: 'Open Sans';
+	font-size: 15px;
+	font-weight: 600;
+	color: #505050;
+	text-align: justify;
+}
