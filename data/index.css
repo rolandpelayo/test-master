@@ -1,0 +1,23 @@
+body{
+    background-color:white;
+    font-family: 'Roboto', sans-serif;
+    color: #58D3F7;
+    margin-left: 28%;
+    width: 40%;
+    height: 50%;
+    padding: 20px;
+  }  
+  #start-button{
+    width: 40%;
+    height: 20%;
+    background-color: #58D3F7;
+    border: 1px solid forestgreen;
+    border-radius: 10px;
+    margin-left: 32%;
+    margin-top: 15%;
+  }
+  h1{
+    width: 45%;
+    height: 20%;
+    color: #58D3F7;
+  }

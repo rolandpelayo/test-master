@@ -1,0 +1,12 @@
+body{
+    background-color:white;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-left: 35%;
+    width: 30%;
+    height: 50%;
+    padding: 20px;
+}
+#LED-ON{
+    margin-left: -25%;
+  }
