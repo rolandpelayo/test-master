@@ -1,0 +1,34 @@
+
+body{
+  background-image: url('back2.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+  font-family: 'Roboto', sans-serif;
+  border: 3px solid;
+  border-color: rgb(218, 255, 10);
+  border-radius: 30px;
+  margin-top: 2%;
+  margin-left: 24%;
+  width: 50%;
+  height: 88%;
+  padding: 15px;
+}
+#LED-ON, #LED-OFF{
+  margin-left: 20%;
+}
+ 
+#start-button{
+  font-style:arial ;color: rgb(0, 0, 0);
+  font-size: 30px;
+  width: 40%;
+  height: 20%;
+  background-color: rgb(255, 65, 214);
+  border: 3px solid rgb(228, 255, 74);
+  border-radius: 10px;
+  margin-left: 30%;
+  margin-top: 20%;
+}
+
+
