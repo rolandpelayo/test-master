@@ -1,0 +1,29 @@
+body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color:white;
+    font-family: 'Roboto', sans-serif;
+    border: 5px solid;
+    border-color: gray;
+    border-radius: 20px;
+    margin-left: 25%;
+    width: 60%;
+    height: 90%;
+    padding: 20px;
+  }
+   
+  #LED-ON, #LED-OFF{
+    margin-left: 25%;
+  }
+   
+  #start-button{
+    width: 50%;
+    height: 30%;
+    background-color: darkseagreen;
+    border: 1px solid forestgreen;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-top: 20%;
+  }
