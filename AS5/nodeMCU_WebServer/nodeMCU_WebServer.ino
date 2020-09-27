@@ -1,13 +1,13 @@
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
- 
+
 // Replace with your network credentials
-const char* ssid = "LOAD SAD PAG MAY TIME";
-const char* password = "lalalala";
- 
+const char* ssid = "DJR";
+const char* password = "@lgabr3store";
+
 ESP8266WebServer server(80);   //instantiate server at port 80 (http port)
- 
+
 String page = "";
 int LEDPin = 2;
 void setup(void){
@@ -16,12 +16,12 @@ void setup(void){
   //make the LED pin output and initially turned off
   pinMode(LEDPin, OUTPUT);
   digitalWrite(LEDPin, LOW);
-   
+
   delay(1000);
   Serial.begin(115200);
   WiFi.begin(ssid, password); //begin WiFi connection
   Serial.println("");
- 
+
   // Wait for connection
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
@@ -32,7 +32,7 @@ void setup(void){
   Serial.println(ssid);
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
-   
+
   server.on("/", [](){
     server.send(200, "text/html", page);
   });
@@ -42,17 +42,17 @@ void setup(void){
     digitalWrite(LEDPin, LOW);
     delay(1000);
   });
-  
+
   server.on("/LEDOff", [](){
     server.send(200, "text/html", page);
     digitalWrite(LEDPin, HIGH);
     delay(1000); 
   });
-  
+
   server.begin();
   Serial.println("You can now control the nodeMCU using Web Server!");
 }
- 
+
 void loop(void){
   server.handleClient();
 }

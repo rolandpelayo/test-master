@@ -1,0 +1,28 @@
+body{
+  background-color: lightskyblue;
+  background-image: url('spotlight.jpg');
+  font-family: 'Roboto', sans-serif;
+  border: 5px solid;
+  border-color: black;
+  border-radius: 20px;
+  margin-left: 25%;
+  width: 50%;
+  height: 97%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+ 
+#LED-ON, #LED-OFF{
+  margin-left: 10%;
+  
+}
+
+#start-button{
+  width: 20%;
+  height: 10%;
+  background-color: forestgreen;
+  border: 2px solid floralwhite;
+  border-radius: 10px;
+  margin-left: 40%;
+  margin-top: 10%;
+}
