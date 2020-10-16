@@ -9,8 +9,8 @@
 #include <FS.h>
 
 //provide your own WiFi SSID and password
-const char* ssid = "TP-LINK";
-const char* password = "09998321149";
+const char* ssid = "SSID";
+const char* password = "PASSWORD";
 
 //Create WebServer instance
 ESP8266WebServer server(80);
