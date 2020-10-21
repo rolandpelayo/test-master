@@ -1,0 +1,27 @@
+body{
+  background-color:gray;
+  font-family: 'Bebas', sans-serif;
+  border: 1px solid;
+  border-color: gray;
+  margin-left: 35%;
+  width: 30%;
+  height: 50%;
+  padding: 20px;
+  margin-top: 10%;
+}
+ 
+#LED-ON, #LED-OFF{
+  margin-left: 20%;
+  width: 45%;
+  height: 80%;
+}
+ 
+#start-button{
+  width: 40%;
+  height: 20%;
+  background-color: lightblue;
+  border: 1px solid darkblue;
+  border-radius: 10px;
+  margin-left: 30%;
+  margin-top: 20%;
+}
