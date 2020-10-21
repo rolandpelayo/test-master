@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<title>Displaying Sensor Data to Web Server</title>
+<script src="script.js"></script>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+
+ h2{
+ 	margin-left: 350px;
+ }
+	h1{
+		margin-left: 350px;
+	}
+	img{
+		margin-left: 350px;
+	}
+
+	.descript{
+
+		margin-left: 450px;
+		background-color: #FEF6A0;
+		font-size:18px;
+		border: 2px solid black;
+		font-family: Philosopher;
+	}
+</style>
+
+</head>
+<body>
+<img src="ban.jpg" width="780px" height="380px">
+
+<h2>ESP8266 Web Server with Sensor Data and Light Controlled Switch</h2>
+
+<h1>Data:</h1> <h1 id='data'></h1>
+<br>
+<table class="descript">
+<th><p>If the data status is above 600 the led light will turn on <br> and if its below 600 the led light will turn off.</p></th>
+</table>
+</body>
+</html>
