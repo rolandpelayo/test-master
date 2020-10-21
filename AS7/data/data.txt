@@ -1,0 +1,9 @@
+if(path == "/data.txt"){
+text = (String)data; // Convert sensor data to string
+bytesWritten = file.print(text); //write to file
+if(bytesWritten > 0){
+size_t sent = server.streamFile(file, contentType); //Send file to client
+}else{ //if nothing to write, just send file
+size_t sent = server.streamFile(file, contentType);
+}
+}
