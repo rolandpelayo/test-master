@@ -1,0 +1,11 @@
+body{
+    background-image: url('back1.jpg');
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid;
+    border-color: gray;
+    border-radius: 20px;
+    margin-left: 35%;
+    width: 30%;
+    height: 50%;
+    padding: 20px;
+    }
