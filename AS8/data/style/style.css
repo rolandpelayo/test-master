@@ -1,0 +1,136 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	min-width: 700px;
+	margin: 0px;
+}
+header{
+	background: url("../Images/circuit.jpg");
+	background-size: cover;
+}
+.logo{
+	font-size: 30px;
+	font-family: 'Courier Prime', monospace;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+	margin: auto 0px auto 90px;
+}
+.links{
+	margin: auto 0px auto 0px;
+	padding: 15px 0px 15px 0px;
+	text-shadow: 1px 1px 2px black;
+}
+.links li{
+	display: inline-block;
+	list-style: none;
+	margin-right: 100px;
+}
+.links li a{
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+	font-family: 'Courier Prime', monospace;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+.links li a:hover{
+	color: red;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 1px 1px 5px black;
+	height: 100px;
+}
+.main-body{
+	margin: 0px 90px 70px 90px;
+}
+.header{
+	font-family: 'Roboto';
+	font-size: 60px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.spiffs{
+	margin-top: 0px;
+	font-family: 'Roboto';
+	font-size: 30px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 50px;
+	font-style: italic;
+}
+figure{
+	width: 500px;
+	margin-bottom: 30px;
+}
+figure img{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+.figures-1, .figures-2{
+	display: flex;
+	justify-content: center;
+}
+.fig-1 img:hover, .fig-2 img:hover{
+	transform: scale(1.25);
+}
+figure a{
+	text-decoration: none;
+	color: black;
+}
+figure p{
+	font-family: 'Roboto';
+	font-size: 25px;
+	font-weight: 400;
+	margin: 25px 0px;
+	text-align: center;
+}
+figure figcaption{
+	font-family: 'Open Sans';
+	font-size: 20px;
+	font-weight: 400;
+	color: black;
+	text-align: justify;
+}
+.fig{
+	text-align: center;
+}
+footer{
+	height: 80px;
+	background: url("../Images/circuit.jpg");
+	background-size: cover;
+	box-shadow: 1px 1px 5px black;
+}
+.footer{
+	margin-left: 90px;
+	margin-right: 90px;
+	display: flex;
+	justify-content: space-around;
+}
+.about{
+	width: 400px;
+	height: 80px;
+	padding: 5px 0px 0px 0px;
+}
+.p1{
+	font-family: 'Courier Prime', monospace;
+	font-size: 20px;
+	color: white;
+	margin: 0px;
+	text-align: center;
+	text-shadow: 1px 1px 1px black;
+	letter-spacing: 1px;
+}
+.p2{
+	font-family: 'Courier Prime', monospace;
+	font-size: 15px;
+	color: white;
+	margin: 0px;
+	text-align: center;
+	text-shadow: 1px 1px 1px black;
+}
