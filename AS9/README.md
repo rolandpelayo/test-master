@@ -3,5 +3,5 @@
 ### November 2, 2020
 ### Web APIs
 ### Web API used: https://covid19api.com/
-### Documentation: https://documenter.getpostman.com/view/10808728/SzS8rjbc
-### GET API Request Used: https://api.covid19api.com/country/philippines/status/confirmed?from=2020-10-30T00:00:00Z&to=2020-10-31T00:00:00Z 
+### API Documentation: https://documenter.getpostman.com/view/10808728/SzS8rjbc
+### GET API Request JSON File: https://api.covid19api.com/country/philippines/status/confirmed?from=2020-10-30T00:00:00Z&to=2020-10-31T00:00:00Z 
