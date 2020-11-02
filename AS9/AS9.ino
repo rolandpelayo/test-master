@@ -65,6 +65,7 @@ void loop() {
       const char* root_1_Date = root_1["Date"]; // "2020-10-31T00:00:00Z"
 
       // Output to serial monitor
+      // Displays Philippines Confirmed Cases from October 30, 2020 to October 31, 2020
       Serial.print("Country: ");
       Serial.println(root_0_Country);
       Serial.print("Country Code: ");
