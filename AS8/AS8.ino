@@ -11,8 +11,8 @@
 #include <FS.h>
 
 //provide your own WiFi SSID and password
-const char* ssid = "SSID";
-const char* password = "PASSWORD";
+const char* SSID = "SSID";
+const char* PASSWORD = "PASSWORD";
 
 //Create WebServer instance
 ESP8266WebServer server(80);
@@ -30,7 +30,7 @@ void setup(void) {
   //For debugging
   Serial.begin(115200);
   //Initiate WiFi connection
-  WiFi.begin(ssid, password); //begin WiFi connection
+  WiFi.begin(SSID, PASSWORD); //begin WiFi connection
   Serial.println("");
   // Wait for connection
   while (WiFi.status() != WL_CONNECTED) {
