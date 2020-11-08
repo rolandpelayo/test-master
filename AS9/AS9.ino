@@ -4,8 +4,8 @@
 
 #define led 2
  
-const char* ssid = "TP-LINK";
-const char* password = "09998321149";
+const char* ssid = "SSID";
+const char* password = "PASSWORD";
 
 DynamicJsonDocument doc(2048);
 
