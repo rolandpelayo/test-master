@@ -4,8 +4,8 @@
 
 #define led 2
  
-const char* ssid = "SSID";
-const char* password = "PASSWORD";
+const char* SSID = "SSID";
+const char* PASSWORD = "PASSWORD";
 
 DynamicJsonDocument doc(2048);
 
@@ -15,7 +15,7 @@ void setup () {
   pinMode(led, OUTPUT);
   digitalWrite(led,HIGH);
   Serial.begin(115200);
-  WiFi.begin(ssid, password);
+  WiFi.begin(SSID, PASSWORD);
   Serial.println();
 
   Serial.print("Connecting.");
