@@ -11,7 +11,7 @@
 #include <FS.h>
 
 //provide your own WiFi SSID and password
-const char* ssid = "SSID";
+const char* SSID = "SSID";
 const char* PASSWORD = "PASSWORD";
 
 //Create WebServer instance
