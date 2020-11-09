@@ -2,4 +2,4 @@
 ### Gericko S. Maandig
 ### November 9 2020
 ### Web APIs
-### Web API used: http://openweathermap.org
+### Web APIs used: http://openweathermap.org

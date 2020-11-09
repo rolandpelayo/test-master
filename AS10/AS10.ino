@@ -5,8 +5,8 @@
 #define led 2
 
 // WiFi SSID and PASSWORD
-const char* ssid = "SSID";
-const char* password = "PASSWORD";
+const char* ssid = "ssid";
+const char* password = "password";
 
 DynamicJsonDocument doc(1024);
 
