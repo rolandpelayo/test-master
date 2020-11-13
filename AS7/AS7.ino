@@ -10,6 +10,7 @@ const char* password = "QWERTYuiop00";
 //Create WebServer instance
 ESP8266WebServer server(80);
 String text = "";
+String page = "";
 double data;
 
 void setup(void) {
@@ -33,8 +34,6 @@ void setup(void) {
   Serial.print("IP address: ");
   //Print your local IP address (needed for browsing the app)
   Serial.println(WiFi.localIP());
-
-
 
 
   if (!SPIFFS.begin())
