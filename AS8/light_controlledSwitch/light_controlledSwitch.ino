@@ -11,10 +11,12 @@ const char* password = "@lgabr3store";
 ESP8266WebServer server(80); //instantiate server at port 80 (http port)
 String text = "";
 double data;
+int LED = 2;
 
 void setup(void){
 //Setup analog input pin
 pinMode(A0, INPUT);
+pinMode(LED, OUTPUT);
 delay(1000);
 //For debugging
 Serial.begin(115200);
@@ -64,16 +66,14 @@ bool handleFileRead(String path) { // send the right file to the client (if it e
   if (SPIFFS.exists(path)) { // If the file exists
     File file = SPIFFS.open(path, "r"); // Open it
     if (path == "/data.txt") {
-      if (data > 512) {
-        text = (String)data + " Status - Darkest"; // Convert sensor data to string
+      if (data >= 512) {
+        text = (String)data + " Led is ON "; // Convert sensor data to string
+        digitalWrite(LED, LOW);
         server.send(200, "text/plain", text);
       }
-      else if (data <= 512 && data > 256) {
-        text = (String)data + "\n Status - Darker"; // Convert sensor data to string
-        server.send(200, "text/plain", text);
-      }
-      else if (data <= 256) {
-        text = (String)data + " Status - Dark"; // Convert sensor data to string
+      else if (data < 512) {
+        text = (String)data + " Led is OFF "; // Convert sensor data to string
+        digitalWrite(LED, HIGH);
         server.send(200, "text/plain", text);
       }
     }

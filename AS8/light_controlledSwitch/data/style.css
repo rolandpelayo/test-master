@@ -1,0 +1,11 @@
+body{
+    background-image: url('woodbg.jpg');
+    font-family: 'Roboto', sans-serif;
+    border: 10px solid;
+    border-color: skyblue;
+    border-radius: 20px;
+    margin-left: 35%;
+    width: 40%;
+    height: 70%;
+    padding: 30px;
+    }
