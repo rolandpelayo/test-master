@@ -1,17 +1,17 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 #include <ArduinoJson.h>
-
-#define LED 2
  
 const char* ssid = "GlobeAtHome_5E7BF";
 const char* password = "DES081983DEN";
 
 DynamicJsonDocument doc(2048);
 
+ 
 void setup () {
-  pinMode(LED, OUTPUT);
-  digitalWrite(LED,HIGH);
+
+  pinMode(LED_BUILTIN, OUTPUT);
+  digitalWrite(LED_BUILTIN,HIGH);
   Serial.begin(115200);
   WiFi.begin(ssid, password);
   Serial.println();
@@ -19,23 +19,24 @@ void setup () {
   Serial.print("Connecting.");
   while (WiFi.status() != WL_CONNECTED) {
     Serial.print(".");
-    digitalWrite(LED,LOW);
-    delay(200);
-    digitalWrite(LED,HIGH);
-    delay(200);
+    digitalWrite(LED_BUILTIN,LOW);
+    delay(250);
+    digitalWrite(LED_BUILTIN,HIGH);
+    delay(250);
   }
- }
+  
+}
  
 void loop() {
 
-  digitalWrite(LED, LOW);
+  digitalWrite(LED_BUILTIN, LOW);
   Serial.println();
   
-  if (WiFi.status() == WL_CONNECTED) { //Check WiFi connection status
+  if (WiFi.status() == WL_CONNECTED) { 
     
     HTTPClient http;
  
-    http.begin("http://cat-fact.herokuapp.com/facts/random");
+    http.begin("http://www.boredapi.com/api/activity?key=5881028");
     
     http.GET();
     
@@ -49,15 +50,26 @@ void loop() {
       delay(5000);
       return;
     }
+
     //Print the parse value
-    Serial.print("Type of Animal: ");
+    Serial.print("     To do when you bored.");
+    Serial.print("\n");
+    Serial.print("\n");
+    Serial.print("  What to do: ");
+    Serial.println(doc["activity"].as<char*>());
+
+    Serial.print("  Type of Activity: ");
     Serial.println(doc["type"].as<char*>());
 
-    Serial.print("Interesting Facts:Did you know that ");
-    Serial.println(doc["text"].as<char*>());
+    Serial.print("  Participants: You ");
+    
+
+ 
     http.end();
  
   }
-  digitalWrite(LED, HIGH);
-  delay(8000);
+
+  digitalWrite(LED_BUILTIN, HIGH);
+  delay(10000);
+  
 }

@@ -1,7 +1,7 @@
 ## Assignment #9
 ### Nollan Jay D. Galicia
-### November 25, 2020 (11:35 A.M)
+### November 28, 2020 ( 1:44 P.M)
 ### Web APIs
 
-### Web API used: https://cat-fact.herokuapp.com
-### GET API Request JSON File: http://cat-fact.herokuapp.com/facts/random
+### Web API used: https://www.boredapi.com/
+### GET API Request JSON File: http://www.boredapi.com/api/activity?key=5881028
